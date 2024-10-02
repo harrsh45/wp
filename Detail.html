@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Exam Details</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+    <div class="background ">
+        <div class="left">
+
+
+            <h1>You've Arrived at the Right Place</h1>
+            <div class="text">
+                Finding the right college is a critical decision that will shape the next four years of your academic
+                journey and beyond. Here, we help you identify institutions that align with your achievements, ensuring
+                you are in an environment that fosters skill development and growth.
+            </div>
+
+            
+        </div>
+        <div class="right">
+            <div class="form-container">
+                <div class="form-box">
+                    <h2>User Exam Details</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <label for="exam-name">Exam Name</label>
+                            <select id="exam-name" name="exam-name" required>
+                                <option value="" disabled selected>Select Exam</option>
+                                <option value="CET">CET</option>
+                                <option value="JEE">JEE</option>
+                                <option value="NEET">NEET</option>
+                                <option value="GATE">GATE</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="passing-year">Passing Year</label>
+                            <input type="number" id="passing-year" name="passing-year" min="2000" max="2024" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="percentile">Percentile</label>
+                            <input type="number" id="percentile" name="percentile" step="0.01" min="0" max="100"
+                                required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="category">Category</label>
+                            <select id="category" name="category" required>
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="General">General</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </div>
+</body>
+
+</html>
